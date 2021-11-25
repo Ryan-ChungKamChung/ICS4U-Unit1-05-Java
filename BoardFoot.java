@@ -64,23 +64,29 @@ final class BoardFoot {
             // User prompt
             System.out.print("Enter a width: ");
 
+            // Gathers the user input into a String
             final String widthString = new BufferedReader(
                     new InputStreamReader(System.in)
             ).readLine();
 
+            // Tries to parse the String into a Double
             width = Double.parseDouble(widthString);
 
             // User prompt
             System.out.print("Enter a height: ");
 
+            // Gathers the user input into a string
             final String heightString = new BufferedReader(
                     new InputStreamReader(System.in)
             ).readLine();
 
+            // Tries to parse the String into a Double
             height = Double.parseDouble(heightString);
 
+            // Calls lengthCalculation and gets the length
             length = lengthCalculation(width, height);
 
+            // Outputs the calculation to the user
             System.out.println("The length is: " + length + " m.");
         } catch (IOException | NumberFormatException exception) {
             // Outputs error message
