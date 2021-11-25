@@ -39,7 +39,8 @@ final class BoardFoot {
      * @param height is the user inputted height.
      * @return the length of the board foot.
      * */
-    private static double lengthCalculation(final double width, final double height) {
+    private static double lengthCalculation(
+            final double width, final double height) {
         return BOARD_FOOT_SIZE / width / height;
     }
 
@@ -77,7 +78,7 @@ final class BoardFoot {
             ).readLine();
 
             height = Double.parseDouble(heightString);
- 
+
             length = lengthCalculation(width, height);
 
             System.out.println("The length is: " + length + " m.");
