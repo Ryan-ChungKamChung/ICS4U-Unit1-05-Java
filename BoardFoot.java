@@ -37,9 +37,9 @@ final class BoardFoot {
     private static double lengthCalculation(
             final double width, final double height) {
 
-        static final int boardFootSize = 144;
+        final int boardFootSize = 144;
 
-        return BOARD_FOOT_SIZE / width / height;
+        return boardFootSize / width / height;
     }
 
     /**
